@@ -16,16 +16,8 @@ fn lorenz_attractor() -> Vec<[f64; 3]> {
 
     (0..STEPS)
         .map(|_| {
-            // Calculate derivatives using the Lorenz equations
-            let [x, y, z] = p;
-            let dx = SIGMA * (y - x);
-            let dy = x * (RHO - z) - y;
-            let dz = x * y - BETA * z;
-
-            // Update positions
-            p = [p[0] + dx * DT, p[1] + dy * DT, p[2] + dz * DT];
-
-            p
+            // Replace the todo!() here!
+            todo!()
         })
         .collect()
 }
